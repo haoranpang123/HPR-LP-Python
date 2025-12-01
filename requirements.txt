@@ -1,0 +1,6 @@
+scipy
+pandas
+highspy
+# swiglpk
+# torch and torchvision are NOT listed here on purpose.
+# please install the correct GPU build separately
