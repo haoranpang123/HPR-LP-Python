@@ -1,6 +1,6 @@
 # HPR-LP: A GPU Solver for Linear Programming
 
-> **The Python implementation of the Halpern Peaceman-Rachford (HPR) method for solving linear programming (LP) problems on the GPU.**
+> **The Python implementation of the Halpern Peaceman-Rachford (HPR) method for solving linear programming (LP) problems on GPUs**
 
 ---
 
@@ -18,13 +18,13 @@ $$
 
 </div>
 
-## Getting start
+## Getting started
 
 ### 1. Prerequisites
 Before using HPR-LP, make sure the following dependencies are installed:
 - **CUDA** (Install the appropriate version for your GPU)
 
-Build a new environment by conda and activate it.
+Build a new environment with conda and activate it.
 
 ```bash
 conda create -n hprlp_python python=3.12
@@ -92,7 +92,7 @@ python demo/demo_model_api.py
 python scripts/run_single_file.py
 ```
 
-This calls `run_single_file.py` with its default arguments, which solve one LP model in MPS format.
+This calls `run_single_file.py` with its default arguments, which solves one LP model in MPS format.
 
 You can also override any of these from the command line, for example:
 
@@ -133,9 +133,18 @@ Solution information:
 - `iter4/6/8` - Iterations to reach 1e-4/6/8 tolerance
 - `time4/6/8` - Time to reach tolerance
 
-## Other Implementations
-- For the complete Julia implementation and source code, please visit the main repository: https://github.com/PolyU-IOR/HPR-LP
-- For the complete C implementation and source code, please visit the main repository: https://github.com/PolyU-IOR/HPR-LP-C
+## Available HPR-LP implementations
+For the C implementation on GPUs, please visit the following repository:
+[https://github.com/PolyU-IOR/HPR-LP-C](https://github.com/PolyU-IOR/HPR-LP-C)
+
+For the Julia implementation on CPUs and GPUs, please visit the following repository:
+[https://github.com/PolyU-IOR/HPR-LP](https://github.com/PolyU-IOR/HPR-LP)
+
+For the Python implementation on GPUs, please visit the following repository:
+[https://github.com/PolyU-IOR/HPR-LP-Python](https://github.com/PolyU-IOR/HPR-LP-Python)
+
+For the MATLAB implementation on CPUs, please visit the following repository:
+[https://github.com/PolyU-IOR/HPR-LP-MATLAB](https://github.com/PolyU-IOR/HPR-LP-MATLAB)
 
 
 ## Contributors
