@@ -18,7 +18,7 @@ $$
 
 </div>
 
-## Getting started
+## Getting Started
 
 ### 1. Prerequisites
 Before using HPR-LP, make sure the following dependencies are installed:
@@ -31,7 +31,7 @@ conda create -n hprlp_python python=3.12
 conda activate hprlp_python
 ```
 
-### 2. Install PyTorch first
+### 2. Install PyTorch First
 
 Install `torch` and `torchvision` that match your CUDA / GPU setup.  
 Example (CUDA 12.8 wheels):
@@ -44,7 +44,7 @@ If that doesn’t work, please install PyTorch by following the official install
 
 ---
 
-### 3. Install the remaining dependencies
+### 3. Install the Remaining Dependencies
 
 After PyTorch is installed, install the rest of the required packages listed in `requirements.txt`:
 
@@ -52,11 +52,11 @@ After PyTorch is installed, install the rest of the required packages listed in 
 pip install -r requirements.txt
 ```
 
-## Running examples
+## Running Examples
 
 The demo LP problem is:
 
-### Test problem (LP)
+### Test Problem (LP)
 
 The default demo problem we ship is a small linear program of the form
 
@@ -86,7 +86,7 @@ python demo/demo_model_api.py
 ```
 
 
-### 2. MPS file API
+### 2. MPS File API
 
 ```bash
 python scripts/run_single_file.py
@@ -133,17 +133,22 @@ Solution information:
 - `iter4/6/8` - Iterations to reach 1e-4/6/8 tolerance
 - `time4/6/8` - Time to reach tolerance
 
-## Available HPR-LP implementations
+## Available HPR-LP Implementations
+
 For the C implementation on GPUs, please visit the following repository:
+
 [https://github.com/PolyU-IOR/HPR-LP-C](https://github.com/PolyU-IOR/HPR-LP-C)
 
 For the Julia implementation on CPUs and GPUs, please visit the following repository:
+
 [https://github.com/PolyU-IOR/HPR-LP](https://github.com/PolyU-IOR/HPR-LP)
 
 For the Python implementation on GPUs, please visit the following repository:
+
 [https://github.com/PolyU-IOR/HPR-LP-Python](https://github.com/PolyU-IOR/HPR-LP-Python)
 
-For the MATLAB implementation on CPUs, please visit the following repository:
+For the MATLAB implementation on CPUs, please visit the following repository:  
+
 [https://github.com/PolyU-IOR/HPR-LP-MATLAB](https://github.com/PolyU-IOR/HPR-LP-MATLAB)
 
 
