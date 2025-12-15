@@ -71,7 +71,7 @@ def read_lp_to_lpstub(filename: str, *, relax_integer: bool = True) -> LPStub:
     
     ok = (status == 0)
     try:
-        ok = ok or (status == HighsStatus.kOk)
+        ok = ok or (status == HighsStatus.kOk) or (status == HighsStatus.kWarning)
     except Exception:
         pass
         
